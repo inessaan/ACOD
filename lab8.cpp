@@ -8,7 +8,7 @@ using namespace std;
 int main( int argc, char** argv ) {
     // Task1
     Mat image, img_hsv;
-    image = imread("/home/pixel/VikaLabs/2.jpg", IMREAD_LOAD_GDAL);   // Read the file
+    image = imread("/images/2.jpg", IMREAD_LOAD_GDAL);   // Read the file
     if(!image.data) {                             // Check for invalid input
         return -1;
     }
