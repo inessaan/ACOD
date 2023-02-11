@@ -56,13 +56,8 @@ int main( int argc, char** argv ) {
     int width_rec = 100;
     double x = dWidth/2 - width_rec / 2;
     double y = dHeight/2 - height_rec/2;
-    Point st(x, y);
-    Point end(dWidth/2 + width_rec / 2, dHeight/2 + height_rec/2);
     
-    Mat frame1 = frame;
-    rectangle(frame, st, end,
-              Scalar(0,0,255),
-              1, LINE_8);
+
     int height_rec2 = width_rec;
     int width_rec2 = height_rec;
     Point st1(dWidth/2 - width_rec2 / 2, dHeight/2 - height_rec2/2);
